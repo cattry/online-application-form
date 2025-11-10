@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== Base Styling ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #fdf6e3 60%, #fce8d5);
+  color: #2a2a2a;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #0d2c54, #123f77);
+  color: #fdf6e3;
+  text-align: center;
+  padding: 1.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid #b02a30;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ===== Form Container ===== */
+.form-container {
+  background: #fffef9;
+  max-width: 700px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(13, 44, 84, 0.15);
+  border: 2px solid #0d2c54;
+}
+
+.form-container h2 {
+  font-family: 'Playfair Display', serif;
+  color: #0d2c54;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #b02a30;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+/* ===== Labels & Inputs ===== */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #123f77;
+  letter-spacing: 0.3px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #0d2c54;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fffaf4;
+  transition: 0.2s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #b02a30;
+  background: #fff8f2;
+  box-shadow: 0 0 5px rgba(176, 42, 48, 0.3);
+}
+
+/* ===== Buttons ===== */
+button {
+  margin-top: 1.5rem;
+  background: #b02a30;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 12px rgba(176, 42, 48, 0.2);
+}
+
+button:hover {
+  background: #0d2c54;
+  color: #fce8d5;
+  transform: translateY(-2px);
+}
+
+/* ===== Submitted Info Page ===== */
+main.form-container p {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+main.form-container p b {
+  color: #b02a30;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0d2c54;
+  color: #fffaf4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.95rem;
+  border-top: 5px solid #b02a30;
+}
+
+/* ===== Extras ===== */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 2rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
